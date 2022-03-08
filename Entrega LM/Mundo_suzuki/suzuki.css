@@ -1,0 +1,43 @@
+
+body {
+    background: #696969 url('./imagenes_suzuki/bg_page.png') repeat-y fixed center;
+    background-size: 70%;
+    margin-left: 20%; 
+    margin-right: 20%;
+}
+
+#pagina {
+    margin: 10%;
+    margin-top: 5%;
+    text-align:justify
+}
+
+img {
+    margin-left: auto;
+    margin-top: 5%;
+    border: 3px solid black;
+    
+}
+
+h1 {
+    color: rgba(221, 27, 27, 0.658);
+    text-align: center;
+    font-family: "Calibri";
+    
+}
+
+h2,h3 {
+    text-align: left;
+    font-family: "Calibri";
+}
+
+ul{
+    list-style-image: url(./imagenes_suzuki/icono.ico);
+}
+
+p {
+    font-size: 18px;
+    color: gray;
+    font-family: "Calibri";
+}
+

@@ -1,0 +1,44 @@
+* {font-size: 60px;
+  text-align: center;
+}
+
+
+#unico {font-family:monospace;
+        font-size: 16px;
+
+}
+
+.especial {font-family: Arial;
+    font-size: 20px;
+    color:blue;
+}
+
+.especiales {font-family: Arial;
+    font-size: 20px;
+    color:rgb(37, 166, 247);
+}
+
+
+body {background-color: darkgray;
+
+} 
+
+h1 {font-family: Verdana;
+    font-size: 24px;
+    color:gray;
+}  
+
+
+p   {font-family: 'Times New Roman';
+    font-size: 12px;
+    color:midnightblue
+    }
+
+h2  {font-family:sans-serif;
+    font-size: 20px;
+    color: olive;
+
+}
+p em {font-size: 62px;
+    
+}
