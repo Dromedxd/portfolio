@@ -11,7 +11,7 @@ import './../index.css';
 const grey = 'rgb(51, 51, 51)';
 const white = 'rgb(196, 193, 193)';
 
-function head() {
+function Head() {
   return (
     <Box sx={{ pt: 2 }}>
       <Grid container spacing={2}>
@@ -32,7 +32,7 @@ function head() {
               style={{ color: grey }}
               sx={{
                 '& .MuiButton-root': {
-                  fontSize: 22,
+                  fontSize: 21,
                   margin: 2,
                   color: white,
                   '&:hover': {
@@ -48,7 +48,7 @@ function head() {
               <Button color="inherit">Contacto</Button>
               <Button color="inherit">Información</Button>
               <Button color="inherit">Experiencia Laboral</Button>
-              <Button color="inherit">Currículum</Button>
+              <Button color="inherit">Curriculum vitae</Button>
             </Toolbar>
           </AppBar>
         </Grid>
@@ -57,4 +57,4 @@ function head() {
   );
 }
 
-export default head;
+export default Head;

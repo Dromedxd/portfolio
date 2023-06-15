@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Head from './components/head';
+import Home from './components/pageContent/home';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
     <Head />
+    <Home />
   </>
 );
 // If you want to start measuring performance in your app, pass a function
