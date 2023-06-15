@@ -1,17 +1,14 @@
-import image from './images/logo.png';
-import AirplayIcon from '@mui/icons-material/Airplay';
-import Box from '@mui/material/Box';
+import React from 'react';
+import reactIcon from './images/reactIcon.JPG';
 
+function Logo() {
+  return (
+    <img
+      src={reactIcon}
+      alt="React logo"
+      style={{ width: '100px', height: 'auto' }}
+    />
+  );
+}
 
-function logo() {
-    return (
-      <>
-       <Box sx={{ fontSize: 40 }}>
-        
-            <AirplayIcon />
-</Box>
-      </>
-    );
-  }
-  
-  export default logo;
+export default Logo;
