@@ -4,6 +4,15 @@ import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import Typography from '@mui/material/Typography';
 
 import './../../index.css';
+import data from './pageContentText.json';
+
+function parseContent(jsonData) {
+  const contenidoHome = jsonData.find(
+    (item) => item.IdContent === 'home'
+  ).contenido;
+  return <Typography paddingBottom={2}>{contenidoHome}</Typography>;
+}
+const content = parseContent(data);
 
 function Home() {
   return (
@@ -20,8 +29,8 @@ function Home() {
               <Typography variant="h3" paddingBottom={2}>
                 Home
               </Typography>
-              <Typography>Saludos este es mi portfolio</Typography>
             </Box>
+            {content}
           </Box>
         </Grid>
       </Grid>

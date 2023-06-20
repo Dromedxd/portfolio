@@ -1,0 +1,31 @@
+[
+    {
+      "IdContent": "home",
+      "contenido": "Esto es el home."
+    },
+    {
+      "IdContent": "reactComponents",
+      "contenido": "Esto son los componentes."
+    },
+    {
+      "IdContent": "proyectos",
+      "contenido": "Esto son los proyectos."
+    },
+    {
+      "IdContent": "contact",
+      "contenido": "Esto es el contacto."
+    },
+    {
+      "IdContent": "info",
+      "contenido": "Esto es el info."
+    },
+    {
+      "IdContent": "workExperience",
+      "contenido": "Esto es la experiencia laboral."
+    },
+    {
+        "IdContent": "curriculumVitae",
+        "contenido": "Esto es el contacto."
+    }
+]
+  
