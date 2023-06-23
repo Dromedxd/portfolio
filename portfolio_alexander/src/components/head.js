@@ -5,13 +5,16 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
-
+import { setGlobalState } from '../globalStates';
 import './../index.css';
 
 const grey = 'rgb(51, 51, 51)';
 const white = 'rgb(196, 193, 193)';
 
 function Head() {
+  const handleButtonClick = (newcontent) => {
+    setGlobalState('content', newcontent);
+  };
   return (
     <Box sx={{ pt: 2 }}>
       <Grid container spacing={2}>
@@ -42,13 +45,42 @@ function Head() {
                 },
               }}
             >
-              <Button color="inherit">Inicio</Button>
-              <Button color="inherit">React Components</Button>
-              <Button color="inherit">Proyectos</Button>
-              <Button color="inherit">Contacto</Button>
-              <Button color="inherit">Información</Button>
-              <Button color="inherit">Experiencia Laboral</Button>
-              <Button color="inherit">Curriculum vitae</Button>
+              <Button color="inherit" onClick={() => handleButtonClick('home')}>
+                Inicio
+              </Button>
+              <Button
+                color="inherit"
+                onClick={() => handleButtonClick('reactComponents')}
+              >
+                React Components
+              </Button>
+              <Button
+                color="inherit"
+                onClick={() => handleButtonClick('proyects')}
+              >
+                Proyectos
+              </Button>
+              <Button
+                color="inherit"
+                // onClick={() => handleButtonClick('contact')}
+              >
+                Contacto
+              </Button>
+              <Button color="inherit" onClick={() => handleButtonClick('info')}>
+                Información
+              </Button>
+              <Button
+                color="inherit"
+                onClick={() => handleButtonClick('workExperience')}
+              >
+                Experiencia Laboral
+              </Button>
+              <Button
+                color="inherit"
+                onClick={() => handleButtonClick('curriculumVitae')}
+              >
+                Curriculum vitae
+              </Button>
             </Toolbar>
           </AppBar>
         </Grid>
