@@ -62,7 +62,7 @@ function Head() {
               </Button>
               <Button
                 color="inherit"
-                // onClick={() => handleButtonClick('contact')}
+                onClick={() => handleButtonClick('contact')}
               >
                 Contacto
               </Button>

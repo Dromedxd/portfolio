@@ -27,7 +27,7 @@ function Info() {
           >
             <Box padding={2}>
               <Typography variant="h3" paddingBottom={2}>
-                Home
+                Info
               </Typography>
             </Box>
             {content}
