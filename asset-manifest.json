@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/dromedxd/static/css/main.50147e1a.css",
-    "main.js": "/dromedxd/static/js/main.abf23c70.js",
-    "static/media/reactIcon.JPG": "/dromedxd/static/media/reactIcon.aff701b7c7b553c9a897.JPG",
-    "index.html": "/dromedxd/index.html",
-    "main.50147e1a.css.map": "/dromedxd/static/css/main.50147e1a.css.map",
-    "main.abf23c70.js.map": "/dromedxd/static/js/main.abf23c70.js.map"
+    "main.css": "/Dromedxd/portfolio_alexander/src/index.js/static/css/main.50147e1a.css",
+    "main.js": "/Dromedxd/portfolio_alexander/src/index.js/static/js/main.ad074116.js",
+    "static/media/reactIcon.JPG": "/Dromedxd/portfolio_alexander/src/index.js/static/media/reactIcon.aff701b7c7b553c9a897.JPG",
+    "index.html": "/Dromedxd/portfolio_alexander/src/index.js/index.html",
+    "main.50147e1a.css.map": "/Dromedxd/portfolio_alexander/src/index.js/static/css/main.50147e1a.css.map",
+    "main.ad074116.js.map": "/Dromedxd/portfolio_alexander/src/index.js/static/js/main.ad074116.js.map"
   },
   "entrypoints": [
     "static/css/main.50147e1a.css",
-    "static/js/main.abf23c70.js"
+    "static/js/main.ad074116.js"
   ]
 }
