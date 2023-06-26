@@ -8,13 +8,13 @@ import data from './pageContentText.json';
 
 function parseContent(jsonData) {
   const contenidoInfo = jsonData.find(
-    (item) => item.IdContent === 'contact'
+    (item) => item.IdContent === 'proyects'
   ).contenido;
   return <Typography paddingBottom={2}>{contenidoInfo}</Typography>;
 }
 const content = parseContent(data);
 
-function Contact() {
+function Proyects() {
   return (
     <Box sx={{ pt: 2 }}>
       <Grid container spacing={2}>
@@ -27,7 +27,7 @@ function Contact() {
           >
             <Box padding={2}>
               <Typography variant="h3" paddingBottom={2}>
-                Info
+                proyects
               </Typography>
             </Box>
             {content}
@@ -38,4 +38,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Proyects;

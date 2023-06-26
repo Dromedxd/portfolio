@@ -27,7 +27,7 @@ function Contact() {
           >
             <Box padding={2}>
               <Typography variant="h3" paddingBottom={2}>
-                Info
+                Contact
               </Typography>
             </Box>
             {content}
