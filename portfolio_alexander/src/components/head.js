@@ -46,7 +46,7 @@ function Head() {
               }}
             >
               <Button color="inherit" onClick={() => handleButtonClick('home')}>
-                Inicio
+                Home
               </Button>
               <Button
                 color="inherit"
@@ -58,22 +58,22 @@ function Head() {
                 color="inherit"
                 onClick={() => handleButtonClick('proyects')}
               >
-                Proyectos
+                Proyects
               </Button>
               <Button
                 color="inherit"
                 onClick={() => handleButtonClick('contact')}
               >
-                Contacto
+                Contact
               </Button>
               <Button color="inherit" onClick={() => handleButtonClick('info')}>
-                Información
+                Info
               </Button>
               <Button
                 color="inherit"
                 onClick={() => handleButtonClick('workExperience')}
               >
-                Experiencia Laboral
+                Work Experience
               </Button>
               <Button
                 color="inherit"
