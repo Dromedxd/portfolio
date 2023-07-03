@@ -1,5 +1,5 @@
 {
-  "homepage": "https://dromedxd.github.io/Dromedxd/",
+  "homepage": "https://dromedxd.github.io/Dromedxd/portfolio_alexander",
   "name": "portfolio_alexander",
   "version": "0.1.0",
   "private": true,
@@ -52,5 +52,4 @@
     "gh-pages": "^5.0.0",
     "prettier": "^2.8.8"
   }
-  
 }
