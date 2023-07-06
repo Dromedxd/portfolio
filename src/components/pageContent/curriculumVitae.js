@@ -2,9 +2,11 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import Typography from '@mui/material/Typography';
-
+import { Document, Page } from 'react-pdf';
 import './../../index.css';
 import data from './pageContentText.json';
+
+const pdf = './CV_Alexander.pdf';
 
 function parseContent(jsonData) {
   const contenidoHome = jsonData.find(
@@ -12,6 +14,7 @@ function parseContent(jsonData) {
   ).contenido;
   return <Typography paddingBottom={2}>{contenidoHome}</Typography>;
 }
+
 const content = parseContent(data);
 
 function CurriculumVitae() {
@@ -31,6 +34,11 @@ function CurriculumVitae() {
               </Typography>
             </Box>
             {content}
+            <Box height={500}>
+              <Document file={pdf}>
+                <Page pageNumber={1} width={800} />
+              </Document>
+            </Box>
           </Box>
         </Grid>
       </Grid>
