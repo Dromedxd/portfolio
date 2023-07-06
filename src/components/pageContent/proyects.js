@@ -2,17 +2,37 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import Typography from '@mui/material/Typography';
-
+import ReactPlayer from 'react-player';
 import './../../index.css';
 import data from './pageContentText.json';
+import Link from '@mui/material/Link';
+
+const djangoUrl =
+  'https://drive.google.com/uc?export=download&id=1USrLdtvduIR8r9cXGpvQaOATr53KNk3R';
+
+const javaGameUrl =
+  'https://drive.google.com/uc?export=download&id=18pHYhMYvvBRQb6qabzEyglHxUUu91RtC';
 
 function parseContent(jsonData) {
-  const contenidoInfo = jsonData.find(
-    (item) => item.IdContent === 'proyects'
-  ).contenido;
-  return <Typography paddingBottom={2}>{contenidoInfo}</Typography>;
+  const proyectsData = jsonData.find((item) => item.IdContent === 'proyects');
+  const { contenido, urlDjango, urlJava } = proyectsData;
+
+  return {
+    contenido,
+    urlDjango,
+    urlJava,
+  };
 }
-const content = parseContent(data);
+
+function linkToVideo(url) {
+  const videoURL = url;
+  return <ReactPlayer url={videoURL} controls />;
+}
+
+const parsedContent = parseContent(data);
+const contentSplit = parsedContent.contenido.split('/separator/');
+const djangoVideo = linkToVideo(djangoUrl);
+const javaGameVideo = linkToVideo(javaGameUrl);
 
 function Proyects() {
   return (
@@ -27,10 +47,27 @@ function Proyects() {
           >
             <Box padding={2}>
               <Typography variant="h3" paddingBottom={2}>
-                proyects
+                Proyects
               </Typography>
+
+              <Typography>{contentSplit[0]}</Typography>
+              <Typography variant="h5">{contentSplit[1]}</Typography>
+              {<Typography>{contentSplit[2]}</Typography>}
+              {djangoVideo}
+              <Link
+                href={parsedContent.urlDjango}
+                target="_blank"
+                rel="noopener"
+              >
+                {parsedContent.urlJava}
+              </Link>
+              <Typography variant="h5">{contentSplit[3]}</Typography>
+              {<Typography>{contentSplit[4]}</Typography>}
+              {javaGameVideo}
+              <Link href={parsedContent.urlJava} target="_blank" rel="noopener">
+                {parsedContent.urlJava}
+              </Link>
             </Box>
-            {content}
           </Box>
         </Grid>
       </Grid>

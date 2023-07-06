@@ -1,6 +1,5 @@
 import React from 'react';
 import { useGlobalState } from './globalStates';
-import { Typography } from '@mui/material';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Head from './components/head';
@@ -41,7 +40,6 @@ function App() {
 
   return (
     <>
-      <Typography>{viewValue}</Typography>
       <Head />
       {content}
     </>

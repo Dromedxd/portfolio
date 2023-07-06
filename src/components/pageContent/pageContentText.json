@@ -9,7 +9,9 @@
     },
     {
       "IdContent": "proyects",
-      "contenido": "Esto son los proyectos."
+      "contenido": "Some of the projects that I have carried out, the following are the ones that I have used the most hours /separator/ \n Online store \n /separator/ An online store made with django with its own database and functional /separator/ \n Tower Defense \n /separator/ A standard tower defense game made in java",
+      "urlDjango": "https://github.com/Dromedxd/djangoTienda",
+      "urlJava": "https://github.com/Dromedxd/JavaTowerDefense"
     },
     {
       "IdContent": "contact",
