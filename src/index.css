@@ -1,4 +1,3 @@
-
 body {
   background-color: rgb(51, 51, 51);
   color: rgb(196, 193, 193);
@@ -11,4 +10,44 @@ h1 {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+input {
+  /* Estilos personalizados para el TextField */
+  border-color: #c4c1c1;
+}
+
+input:hover {
+  /* Estilos personalizados para el TextField cuando se pasa el cursor sobre él */
+  border-color: #333333;
+}
+
+input:focus {
+  border-color: #333333;
+}
+
+input::-webkit-input-placeholder {
+  color: #c4c1c1;
+  border-color: #c4c1c1;
+}
+
+input:-ms-input-placeholder {
+  color: #c4c1c1;
+  font-size: large;
+  border-color: #c4c1c1;
+}
+
+input:-webkit-autofill {
+  color: #c4c1c1;
+  -webkit-box-shadow: 0 0 0 100px #333333 inset;
+  transition: background-color 5000s ease-in-out 0s; 
+  border-color: #c4c1c1;
+}
+
+input:-webkit-autofill:hover {
+  color: #c4c1c1; /* Cambia el color de la letra */
+  -webkit-box-shadow: 0 0 0 100px #333333 inset;
+  transition: background-color 5000s ease-in-out 0s;
+  border-color: #c4c1c1;
 }
