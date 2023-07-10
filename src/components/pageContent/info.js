@@ -6,6 +6,8 @@ import Link from '@mui/material/Link';
 
 import './../../index.css';
 import data from './pageContentText.json';
+import rootImg from '../images/tree.png';
+import reactImg from '../images/reactIcon.JPG';
 
 function parseContent(jsonData) {
   const infoData = jsonData.find((item) => item.IdContent === 'info');
@@ -40,6 +42,18 @@ function Info() {
               <Link href={parsedContent.gitLink} target="_blank" rel="noopener">
                 {parsedContent.gitLink}
               </Link>
+              <Box paddingTop={2}>
+                <img
+                  src={rootImg}
+                  alt="tree"
+                  style={{ width: '400px', height: 'auto' }}
+                />
+                <img
+                  src={reactImg}
+                  alt="React logo"
+                  style={{ width: '250px', height: 'auto' }}
+                />
+              </Box>
             </Box>
           </Box>
         </Grid>
