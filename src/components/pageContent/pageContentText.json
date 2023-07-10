@@ -20,7 +20,8 @@
     },
     {
       "IdContent": "info",
-      "contenido": "This page has the purpose of being my portfolio to promote myself and help me find a job."
+      "contenido": "This page has the purpose of being my portfolio to promote myself and help me find a job. \n Everything is done with react.js, there is really only one view and depending on which option is selected in the menu/header, the 'body', which is another component, is updated and its content changes",
+      "gitLink": "https://github.com/Dromedxd/portfolio"
     },
     {
       "IdContent": "workExperience",

@@ -2,17 +2,23 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
 
 import './../../index.css';
 import data from './pageContentText.json';
 
 function parseContent(jsonData) {
-  const contenidoInfo = jsonData.find(
-    (item) => item.IdContent === 'info'
-  ).contenido;
-  return <Typography paddingBottom={2}>{contenidoInfo}</Typography>;
+  const infoData = jsonData.find((item) => item.IdContent === 'info');
+  const { contenido, gitLink } = infoData;
+
+  return {
+    contenido,
+    gitLink,
+  };
 }
-const content = parseContent(data);
+
+const parsedContent = parseContent(data);
+const contentSplit = parsedContent.contenido.split('\n');
 
 function Info() {
   return (
@@ -29,8 +35,12 @@ function Info() {
               <Typography variant="h3" paddingBottom={2}>
                 Info
               </Typography>
+              {<Typography>{contentSplit[0]}</Typography>}
+              {<Typography>{contentSplit[1]}</Typography>}
+              <Link href={parsedContent.gitLink} target="_blank" rel="noopener">
+                {parsedContent.gitLink}
+              </Link>
             </Box>
-            {content}
           </Box>
         </Grid>
       </Grid>
