@@ -16,7 +16,7 @@ function Head() {
     setGlobalState('content', newcontent);
   };
   return (
-    <Box sx={{ pt: 2 }}>
+    <Box sx={{ pt: 2, alignItems: 'center' }}>
       <Grid container spacing={2}>
         <Grid
           xs={1}
@@ -29,8 +29,11 @@ function Head() {
         >
           <Logo />
         </Grid>
-        <Grid xs={10} sm={10}>
-          <AppBar position="static" sx={{ backgroundColor: grey }}>
+        <Grid xs={3} sm={10}>
+          <AppBar
+            position="static"
+            sx={{ backgroundColor: grey, alignItems: 'center' }}
+          >
             <Toolbar
               style={{ color: grey }}
               sx={{
