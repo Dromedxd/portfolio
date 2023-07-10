@@ -1,8 +1,9 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import CardMedia from '@mui/material/CardMedia';
 
 import './../../index.css';
 import data from './pageContentText.json';
@@ -26,8 +27,8 @@ function Info() {
   return (
     <Box sx={{ pt: 2 }}>
       <Grid container spacing={2}>
-        <Grid xs={1}></Grid>
-        <Grid xs={10} sm={10}>
+        <Grid item xs={1}></Grid>
+        <Grid item xs={10} sm={10}>
           <Box
             sx={{
               boxShadow: '-4px -2px 12px rgba(0, 0, 0, 0.2)',
@@ -37,18 +38,20 @@ function Info() {
               <Typography variant="h3" paddingBottom={2}>
                 Info
               </Typography>
-              {<Typography>{contentSplit[0]}</Typography>}
-              {<Typography>{contentSplit[1]}</Typography>}
+              <Typography>{contentSplit[0]}</Typography>
+              <Typography>{contentSplit[1]}</Typography>
               <Link href={parsedContent.gitLink} target="_blank" rel="noopener">
                 {parsedContent.gitLink}
               </Link>
               <Box paddingTop={2}>
-                <img
+                <CardMedia
+                  component="img"
                   src={rootImg}
                   alt="tree"
                   style={{ width: '400px', height: 'auto' }}
                 />
-                <img
+                <CardMedia
+                  component="img"
                   src={reactImg}
                   alt="React logo"
                   style={{ width: '250px', height: 'auto' }}

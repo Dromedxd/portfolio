@@ -1,9 +1,10 @@
 import React from 'react';
 import reactIcon from './images/reactIcon.JPG';
+import Avatar from '@mui/material/Avatar';
 
 function Logo() {
   return (
-    <img
+    <Avatar
       src={reactIcon}
       alt="React logo"
       style={{ width: '100px', height: 'auto' }}

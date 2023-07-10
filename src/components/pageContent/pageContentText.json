@@ -20,12 +20,12 @@
     },
     {
       "IdContent": "info",
-      "contenido": "This page has the purpose of being my portfolio to promote myself and help me find a job. \n Everything is done with react.js, there is really only one view and depending on which option is selected in the menu/header, the 'body', which is another component, is updated and its content changes",
+      "contenido": "This page has the purpose of being my portfolio to promote myself and help me find a job. \n Everything is done with react.js, there is really only one view and depending on which option is selected in the menu/header, the 'body', which is another component, is updated and its content changes.",
       "gitLink": "https://github.com/Dromedxd/portfolio"
     },
     {
       "IdContent": "workExperience",
-      "contenido": "Esto es la experiencia laboral."
+      "contenido": "My work experience, although it has been little, I have a lot to talk about. /separator/ In englishexamlab I learned a lot about programming oriented to web pages, I learned about typescript, react, git and many things related to APIS, let's say that thanks to them I discovered how much I liked this environment./separator/ Much of my time in this company, I dedicated myself to parsing exercises from an old platform made in html to react with the help of MaterialUI"
     },
     {
         "IdContent": "curriculumVitae",
