@@ -9,7 +9,7 @@ import 'react-pdf/dist/esm/Page/TextLayer.css';
 import './../../index.css';
 import data from './pageContentText.json';
 
-import pdfFile from './CV_Alexander.pdf';
+import pdfFile from '../images/CV_Alexander.pdf';
 
 function parseContent(jsonData) {
   const contenidoHome = jsonData.find(
