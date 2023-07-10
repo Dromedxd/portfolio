@@ -59,7 +59,7 @@ function Proyects() {
                 target="_blank"
                 rel="noopener"
               >
-                {parsedContent.urlJava}
+                {parsedContent.urlDjango}
               </Link>
               <Typography variant="h5">{contentSplit[3]}</Typography>
               {<Typography>{contentSplit[4]}</Typography>}

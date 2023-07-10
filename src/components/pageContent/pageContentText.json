@@ -20,7 +20,7 @@
     },
     {
       "IdContent": "info",
-      "contenido": "Esto es el info."
+      "contenido": "This page has the purpose of being my portfolio to promote myself and help me find a job."
     },
     {
       "IdContent": "workExperience",
@@ -28,7 +28,7 @@
     },
     {
         "IdContent": "curriculumVitae",
-        "contenido": "Esto es el curriculum"
+        "contenido": "My curriculum"
     }
 ]
   

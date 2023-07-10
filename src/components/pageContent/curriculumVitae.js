@@ -2,11 +2,14 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import Typography from '@mui/material/Typography';
-import { Document, Page } from 'react-pdf';
+import { Document, Page, pdfjs } from 'react-pdf';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
+
 import './../../index.css';
 import data from './pageContentText.json';
 
-const pdf = './CV_Alexander.pdf';
+import pdfFile from './CV_Alexander.pdf';
 
 function parseContent(jsonData) {
   const contenidoHome = jsonData.find(
@@ -17,10 +20,12 @@ function parseContent(jsonData) {
 
 const content = parseContent(data);
 
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
 function CurriculumVitae() {
   return (
     <Box sx={{ pt: 2 }}>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} paddingBottom={2}>
         <Grid xs={1}></Grid>
         <Grid xs={10} sm={10}>
           <Box
@@ -30,15 +35,20 @@ function CurriculumVitae() {
           >
             <Box padding={2}>
               <Typography variant="h3" paddingBottom={2}>
-                curriculumVitae
+                CurriculumVitae
               </Typography>
             </Box>
-            {content}
-            <Box height={500}>
-              <Document file={pdf}>
-                <Page pageNumber={1} width={800} />
+            <Box padding={2}>{content}</Box>
+            <Grid
+              container
+              spacing={2}
+              sx={{ marginLeft: '25%' }}
+              paddingBottom={2}
+            >
+              <Document file={pdfFile}>
+                <Page pageNumber={1}></Page>
               </Document>
-            </Box>
+            </Grid>
           </Box>
         </Grid>
       </Grid>
