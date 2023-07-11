@@ -70,7 +70,7 @@ function Home() {
           </Box>
         </Grid>
         <Grid item xs={3} sm={3}>
-          <Box boxShadow={4} p={2}>
+          <Box boxShadow={8} p={2}>
             <Typography variant="h4">Abilities</Typography>
             {skills.map((skill) => (
               <Box key={skill.name} width="100%" mt={1}>

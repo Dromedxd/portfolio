@@ -8,7 +8,6 @@ import CardMedia from '@mui/material/CardMedia';
 import './../../index.css';
 import data from './pageContentText.json';
 import rootImg from '../images/tree.png';
-import reactImg from '../images/reactIcon.JPG';
 
 function parseContent(jsonData) {
   const infoData = jsonData.find((item) => item.IdContent === 'info');
@@ -39,26 +38,32 @@ function Info() {
                 Info
               </Typography>
               <Typography>{contentSplit[0]}</Typography>
-              <Typography>{contentSplit[1]}</Typography>
+              <Typography sx={{ marginTop: 2 }}>{contentSplit[1]}</Typography>
               <Link href={parsedContent.gitLink} target="_blank" rel="noopener">
-                {parsedContent.gitLink}
+                <Typography sx={{ marginTop: 2 }}>
+                  {parsedContent.gitLink}
+                </Typography>
               </Link>
-              <Box paddingTop={2}>
-                <CardMedia
-                  component="img"
-                  src={rootImg}
-                  alt="tree"
-                  style={{ width: '400px', height: 'auto' }}
-                />
-                <CardMedia
-                  component="img"
-                  src={reactImg}
-                  alt="React logo"
-                  style={{ width: '250px', height: 'auto' }}
-                />
-              </Box>
             </Box>
           </Box>
+        </Grid>
+        <Grid item xs={1}></Grid>
+        <Grid item xs={4.5}></Grid>
+        <Grid item xs={5}>
+          <CardMedia
+            boxShadow={3}
+            p={5}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            component="img"
+            src={rootImg}
+            alt="tree"
+            style={{
+              width: '400px',
+              height: 'auto',
+            }}
+          />
         </Grid>
       </Grid>
     </Box>
