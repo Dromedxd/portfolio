@@ -1,15 +1,15 @@
 [
     {
       "IdContent": "home",
-      "contenido": "Esto es el home."
+      "contenido": "Welcome to my portfolio!/separator/I'm Alexander, a programmer passionate about creating innovative and functional solutions./separator/In this portfolio, I invite you to explore my work and discover the projects I have been involved in. Each project reflects my focus on quality, creativity, and attention to detail. My goal is to create impactful and satisfying experiences for both users and clients./separator/In addition to my experience in frontend, I am also passionate about continuous learning and staying up-to-date with the latest trends and advancements in the field of technology. I am always eager to take on new challenges and explore new technologies to expand my knowledge and improve my skills./separator/Feel free to explore my projects and examine the approach and quality of my work. I am open to collaboration opportunities, so please don't hesitate to contact me if you have any questions, proposals, or just want to say hello. I am excited to showcase my work and share my passion for web programming with you./separator/ Thank you for visiting my portfolio!"
     },
     {
       "IdContent": "reactComponents",
       "contenido": "Esto son los componentes."
     },
     {
-      "IdContent": "proyects",
-      "contenido": "Some of the projects that I have carried out, the following are the ones that I have used the most hours /separator/ \n Online store \n /separator/ An online store made with django with its own database and functional /separator/ \n Tower Defense \n /separator/ A standard tower defense game made in java",
+      "IdContent": "projects",
+      "contenido": "Some of the projects that I have carried out, the following are the ones that I have used the most hours /separator/ \n Online store with Django \n /separator/ An online store made with django with its own database and functional /separator/ \n Tower Defense \n /separator/ A standard tower defense game made in java",
       "urlDjango": "https://github.com/Dromedxd/djangoTienda",
       "urlJava": "https://github.com/Dromedxd/JavaTowerDefense"
     },

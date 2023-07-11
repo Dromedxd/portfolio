@@ -7,7 +7,7 @@ import Home from './components/pageContent/home';
 import Contact from './components/pageContent/contact';
 import CurriculumVitae from './components/pageContent/curriculumVitae';
 import Info from './components/pageContent/info';
-import Proyects from './components/pageContent/proyects';
+import Projects from './components/pageContent/projects';
 import ReactComponents from './components/pageContent/reactComponents';
 import WorkExperience from './components/pageContent/workExperience';
 
@@ -25,8 +25,8 @@ function App() {
         return <CurriculumVitae />;
       case 'info':
         return <Info />;
-      case 'proyects':
-        return <Proyects />;
+      case 'projects':
+        return <Projects />;
       case 'reactComponents':
         return <ReactComponents />;
       case 'workExperience':

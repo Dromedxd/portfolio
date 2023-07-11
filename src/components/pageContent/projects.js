@@ -14,8 +14,8 @@ const javaGameUrl =
   'https://drive.google.com/uc?export=download&id=18pHYhMYvvBRQb6qabzEyglHxUUu91RtC';
 
 function parseContent(jsonData) {
-  const proyectsData = jsonData.find((item) => item.IdContent === 'proyects');
-  const { contenido, urlDjango, urlJava } = proyectsData;
+  const projectsData = jsonData.find((item) => item.IdContent === 'projects');
+  const { contenido, urlDjango, urlJava } = projectsData;
 
   return {
     contenido,
@@ -34,7 +34,7 @@ const contentSplit = parsedContent.contenido.split('/separator/');
 const djangoVideo = linkToVideo(djangoUrl);
 const javaGameVideo = linkToVideo(javaGameUrl);
 
-function Proyects() {
+function Projects() {
   return (
     <Box sx={{ pt: 2 }}>
       <Grid container spacing={2}>
@@ -47,7 +47,7 @@ function Proyects() {
           >
             <Box padding={2}>
               <Typography variant="h3" paddingBottom={2}>
-                Proyects
+                Projects
               </Typography>
 
               <Typography>{contentSplit[0]}</Typography>
@@ -75,4 +75,4 @@ function Proyects() {
   );
 }
 
-export default Proyects;
+export default Projects;
